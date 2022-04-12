@@ -30,10 +30,10 @@
 
 ## Options for working with this material
 
-- Browser-based setup with GitPod
+- [Browser-based setup with GitPod](https://testingaccessib-workshop-abielzjxum9.ws-us39a.gitpod.io)
   - Note: GitPod may have accessibility issues
-- Download a zip file for local setup
-- Clone this Git repo for local setup
+- [Download a zip file for local setup](https://github.com/testing-accessibility/workshop-design-people-skills/archive/refs/heads/main.zip)
+- Clone this Git repo for local setup (see instructions below)
 
 ## System Requirements for local setup
 
