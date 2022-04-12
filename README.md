@@ -35,7 +35,7 @@
 - [Download a zip file for local setup](https://github.com/testing-accessibility/workshop-design-people-skills/archive/refs/heads/main.zip)
 - Clone this Git repo for local setup (see instructions below)
 
-## System Requirements for local setup
+## System Requirements for Local Setup
 
 - [git][git] v2.13 or greater
 - [NodeJS][node] `12 || 14 || 15 || 16`
@@ -70,7 +70,7 @@ cd workshop-design-people-skills
 yarn
 ```
 
-There are periodic changes to this repo. To update your local build, run:
+There may be periodic changes to this repo. To update your local build, run:
 
 ```
 git pull
@@ -86,13 +86,13 @@ please [file an issue][issue] and provide _all_ the output from the commands you
 
 ## Running the project locally
 
-This monorepo contains various workshop files and a static website. To get the site up and running (and really see if it worked) with [Parcel](https://parceljs.org), run this command from the project’s root folder:
+This repo contains various workshop files and a static website. To get the site up and running (and really see if it worked) with [Parcel](https://parceljs.org), run this command from the project’s root folder:
 
 ```shell
 yarn start
 ```
 
-This should start the site for your browser at the address indicated in your Terminal, with an index page listing files and sections for each workshop:
+This should start the site for your browser at the address indicated in your Terminal:
 `http://localhost:1234`
 
 ## Working through the exercises

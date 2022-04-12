@@ -1,0 +1,44 @@
+{
+  "name": "workshop-design-people-skills",
+  "version": "1.0.0",
+  "description": "A repo of exercises for the Testing Accessibility: Design & People Skills workshop",
+  "scripts": {
+    "start": "parcel src/index.html --no-source-maps",
+    "build": "parcel build src/index.html --no-source-maps"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/testing-accessibility/workshop-design-people-skills.git"
+  },
+  "keywords": [
+    "accessibility",
+    "inclusive-design",
+    "html",
+    "css",
+    "web"
+  ],
+  "author": "Marcy Sutton",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/testing-accessibility/workshop-design-people-skills/issues"
+  },
+  "homepage": "https://github.com/testing-accessibility/workshop-design-people-skills#readme",
+  "dependencies": {
+    "babel-plugin-transform-glob-import": "^1.0.1",
+    "sass-loader": "^10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@emotion/babel-plugin": "^11.3.0",
+    "@parcel/resolver-glob": "^2.0.1",
+    "@parcel/transformer-sass": "^2.0.1",
+    "babel-loader": "^8.2.3",
+    "copy-webpack-plugin": "6",
+    "parcel": "^2.0.1",
+    "posthtml-include": "^1.7.2"
+  },
+  "alias": {
+    "images": "./images"
+  }
+}

@@ -1,0 +1,291 @@
+/* Page-specific styles */
+
+/* Homepage */
+
+.page-home #header {
+    background: url(../images/backpacking1.jpg) no-repeat;
+    background-position: top center;
+    background-size: contain;
+    min-height: 640px;
+}
+#home-form {
+    background-color: var(--bgcolor-form);
+    border-radius: 3px;
+    box-shadow: 0 10px 30px #00000012;
+    margin-top: -60px;
+    padding: 1.5em 2em 2em;
+}
+#home-form .label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+.page-home .form-wrap {
+    align-items: end;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 3fr 3fr 1fr;
+    margin: 0 auto 0;
+}
+@media screen and (max-width: 640px) {
+    .page-home .form-wrap {
+        grid-template-columns: none;
+        grid-template-rows: auto;
+    }
+}
+.page-home .two-part-overlap {
+    padding-top: 3em;
+    position: relative;
+}
+.page-home .content-block-wrap {
+    position: relative;
+}
+.page-home .content-block-wrap img {
+    float: left;
+    margin-right: 2em;
+    margin-top: -2em;
+}
+.page-home .content-block {
+    background-color: #F8F8F8;
+    margin-left: auto;
+    max-width: 620px;
+    padding: 1.5em 1.5em 4.5em 4.5em;
+    width: 100%;
+}
+.page-home .content-block div {
+    color: #4A4B49;
+    font-size: 1rem;
+    margin: 1em 0;
+}
+.page-home .link-block {
+    font-size: 1rem;
+    margin-left: 1em;
+    margin-top: -2em;
+    max-width: 300px;
+}
+@media screen and (max-width: 840px) {
+    .page-home .content-block-wrap img {
+        margin-bottom: 1em;
+    }
+    .page-home .link-block {
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 640px) {
+    .page-home .content-block-wrap img {
+        width: 100%;
+    }
+    .page-home .content-block {
+        padding: 1.5em;
+    }
+}
+.page-home .link-list {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+.page-home .link-list a {
+    color: #4A4B49;
+    display: block;
+    margin: 0.25em 0;
+    padding: 0.25em 0;
+    text-decoration: none;
+}
+.page-home .link-list a:before {
+    color: var(--color-accent-dark);
+    content: '\02C6';
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0 0.5rem 0 0;
+    transform: rotate(90deg);
+}
+
+/* About Page */
+.page-about {
+    background-color: var(--bgcolor-content-page);
+    padding-bottom: 6em;
+}
+.page-about .form-wrap {
+    background-color: var(--bgcolor-form);
+    padding-bottom: 3em;
+}
+.page-about .form-wrap .label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.5em;
+}
+.page-about .content-block div {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+.page-about .content-block .contact {
+    align-items: flex-start;
+    display: flex;
+}
+.page-about .content-block [class^='icon-'] {
+    display: inline-block;
+    height: 1.5em;
+    margin-right: 0.5em;
+    width: 1.5em;
+}
+.page-about .content-block .icon-at {
+    color: #545050;
+    font-size: 1.3rem;
+    height: 1em;
+}
+.page-about .content-block .icon-house {
+    background: transparent url(../images/icons/icon-location.svg) no-repeat;
+    background-size: contain;
+}
+
+/* Listings pages */
+.page-listings {
+    background-color: var(--bgcolor-content-page);
+}
+.page-listings .listings-header {
+    align-items: center;
+    display: flex;
+    margin-bottom: 1em;
+}
+.page-listings .listings-header h1,
+.page-listings .listings-header h2 {
+    font-size: 1.75rem;
+    font-weight: normal;
+}
+.page-listings .listings-header .dropdown-list {
+    margin-left: auto;
+}
+.page-listings .listings-list {
+    background-color: #fff;
+    padding-top: 0.5em;
+}
+.page-listings .listings-list .wide-layout {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+.page-listing-detail h2,
+.page-listing-detail h3 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+.page-listing-detail .description-text {
+    margin-bottom: 4em;
+}
+.page-listing-detail .detail-images {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.page-listing-detail .detail-images img {
+    max-width: 100%;
+}
+.page-listing-detail .detail-images img:nth-child(2) {
+    grid-column: 2 / 3;
+    grid-row: span 2;
+}
+.page-listing-detail .detail-images img:nth-child(3) {
+    margin-top: auto;
+}
+@media screen and (max-width: 540px) {
+    .page-listing-detail .detail-images {
+        display: block;
+    }
+    .page-listing-detail img {
+        width: 100%;
+    }
+}
+.listing-excerpt {
+    display: grid;
+    font-family: inherit;
+    gap: 1em;
+    grid-template-columns: 1fr 5fr;
+    padding-bottom: 2em;
+}
+.listing-excerpt img {
+    max-width: 300px;
+}
+.listing-excerpt header {
+    align-items: flex-start;
+    display: flex;
+    margin-bottom: 1em;
+}
+.listing-excerpt header h3 {
+    font-size: 1.25rem;
+    margin: 0;
+}
+.listing-excerpt p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+}
+.amenity-icons {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+    margin-top: 0;
+    padding: 0;
+}
+.amenity-icons.grid {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 0;
+    max-width: 480px;
+}
+.amenity-icons .grid li {
+    margin-top: 0;
+    margin-left: 0.25em;
+}
+.amenity-icons span[class^='icon-'] {
+    background-color: #F8F9FA;
+    border: 1px solid #E6EBEF;
+    border-radius: 3px;
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+}
+
+/* Adventure Ideas Pages */
+.page-adventure-ideas .page-header {
+    background: url(../images/mtbaker-hiking.jpg) no-repeat;
+    background-position: top center;
+    background-size: auto;
+    min-height: 420px;
+}
+.page-adventure-ideas .layout {
+    padding-top: 2em;
+
+    h3 {
+        margin-bottom: 1em;
+    }
+}
+
+/* Submit Listing Page */
+.page-submit-listing .page-header {
+    background: url(../images/utah-desert.jpg) no-repeat;
+    background-position: top center;
+    background-size: auto;
+    min-height: 420px;
+}
+.page-submit-listing .form-wrap {
+    background-color: var(--bgcolor-form);
+    padding-bottom: 3em;
+
+    .asterisk,
+    .error {
+        color: var(--color-accent-error);
+    }
+}
+.page-submit-listing .layout {
+    padding-top: 2em;
+
+    h3 {
+        margin-bottom: 1em;
+    }
+}
+.page-submit-listing .form-field {
+    margin-bottom: 1em;
+}
+.page-submit-listing form [aria-invalid="true"] {
+    border-color: var(--color-accent-error);
+}
