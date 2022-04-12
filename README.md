@@ -1,5 +1,5 @@
 <div>
-  <h1 align="center">✨ Testing Accessibility ✨</h1>
+  <h1 align="center">✨ Testing Accessibility with Marcy Sutton ✨</h1>
 
   <a href="https://testingaccessibility.com">
     <img
