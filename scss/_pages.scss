@@ -289,3 +289,141 @@
 .page-submit-listing form [aria-invalid="true"] {
     border-color: var(--color-accent-error);
 }
+
+/* Generic Page */
+.page-plans {
+    background-color: var(--bgcolor-plans-page);
+
+    article.layout {
+        padding-top: 1em;
+    }
+}
+.page-plans .plan-list {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+
+    li {
+        list-style: none;
+    }
+    & > li {
+        padding: 0;
+        width: 50%;
+
+        & > div {
+            border: 2px solid var(--color-border-plan);
+            border-radius: 5px;
+            padding: 2em 1em;
+        }
+    }
+    h3 {
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-bottom: 1em;
+
+        span {
+            font-weight: bold;
+        }
+    }
+    h4 {
+        font-size: 2rem;
+        margin-bottom: 0;
+        margin-top: 0;
+
+        span {
+            color: var(--color-accent-muted);
+            font-size: 1.2rem;
+        }
+    }
+    ul {
+        margin: 3em 0;
+        padding: 0;
+    }
+    li li {
+        display: flex;
+        flex-direction: row;
+        margin: 0 0 1em;
+        padding: 0 2em;
+        text-align: left;
+
+        span[class^="icon-"] {
+            flex-shrink: 0;
+            height: 1rem;
+            margin-right: 0.5em;
+            width: 1rem;
+        }
+    } 
+    p {
+        color: var(--color-accent-muted);
+        font-size: 0.8rem;
+        margin-left: 5em;
+        margin-top: 1.5em;
+        margin-right: 5em;
+    }
+    p.plan-subhead {
+        margin-top: 0.5em;
+    }
+    button {
+        border: none;
+        border-radius: 5px;
+        box-shadow: none;
+        color: var(--color-primary-light);
+        cursor: pointer;
+        display: inline-block;
+        font-weight: bold;
+        padding: 1em 4em;
+        -webkit-appearance: none;
+    }
+    li.plan-basic {
+        margin-left: auto;
+
+        h3 span {
+            color: var(--color-accent-muted);
+        }
+        button {
+            background-color: var(--color-accent-muted);
+        }
+    }
+    li.plan-pro {
+        margin-left: 0;
+        margin-right: auto;
+
+        &> div {
+            background-color: var(--color-primary-light);
+            box-shadow: 0px 5px 30px -5px rgba(0,0,0,0.10);
+            padding-bottom: 4rem;
+            padding-top: 4rem;
+            position: relative;
+
+            &:before {
+                background-color: var(--color-accent-tertiary);
+                content: '';
+                border-radius: 5px 5px 0 0;
+                display: block;
+                height: 7px;
+                left: 0;
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+            }
+        }
+        .icon-proplan {
+            height: 6.2rem;
+            margin-top: -3rem;
+            position: absolute;
+            margin-left: -2.9rem;
+            left: 50%;
+            top: 0;
+            width: 5.8rem;
+        }
+        h3 span {
+            color: var(--color-accent-tertiary);
+        }
+        button {
+            background-color: var(--color-accent-tertiary);
+        }
+    }
+}
