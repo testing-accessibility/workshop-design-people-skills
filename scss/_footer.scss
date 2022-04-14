@@ -15,4 +15,8 @@
     height: 40px;
     justify-content: center;
     width: 40px;
+
+    img {
+        filter: invert(1);
+    }
 }

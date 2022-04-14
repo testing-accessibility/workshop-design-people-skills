@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "A repo of exercises for the Testing Accessibility: Design & People Skills workshop",
   "scripts": {
-    "start": "parcel src/index.html --no-source-maps",
-    "build": "parcel build src/index.html --no-source-maps"
+    "start": "parcel index.html --no-source-maps",
+    "build": "parcel build index.html --no-source-maps"
   },
   "repository": {
     "type": "git",
