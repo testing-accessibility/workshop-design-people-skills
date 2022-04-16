@@ -155,47 +155,7 @@
         </div>
         <div class="modal-curtain" hidden></div>
         <include src="_includes/footer.html"></include>
-        <script src="../script.js"></script>
-        <script>
-            function loadPage() {
-                var dialog = document.querySelector('.payment-modal')
-                var dialogCloseBtn = dialog.querySelector('.btn-close-dialog')
-                var btnOpenDialogBasic = document.querySelector('#btn-join-basic')
-                var btnOpenDialogPro = document.querySelector('#btn-join-pro')
-                var screenCurtain = document.querySelector('.modal-curtain')
-                var customAmountRadio = dialog.querySelector('#amt_custom')
-                var customAmountInput = dialog.querySelector('#amt_custom_text')
-                var currentDialogName = null
-
-                function btnCloseClick() {
-                    closeDialog()
-
-                    if (currentDialogName) {
-                        dialog.classList.remove(currentDialogName)
-                    }
-                }
-                function focusInCustomInput() {
-                    customAmountRadio.checked = true
-                }
-                function openDialog(dialogName) {
-                    currentDialogName = dialogName
-                    dialog.removeAttribute('hidden')
-                    dialog.classList.add(currentDialogName)
-                    screenCurtain.removeAttribute('hidden')
-                    dialogCloseBtn.addEventListener('click', btnCloseClick)
-                    
-                    customAmountInput.addEventListener('focusin', focusInCustomInput)
-                }
-                function closeDialog() {
-                    dialog.setAttribute('hidden', '')
-                    screenCurtain.setAttribute('hidden', '')
-                    dialogCloseBtn.removeEventListener('click', btnCloseClick)
-                    customAmountInput.removeEventListener('focusin', focusInCustomInput);
-                }
-                btnOpenDialogPro.addEventListener('click', function(){ openDialog('pro')})
-                btnOpenDialogBasic.addEventListener('click', function(){ openDialog('basic')})
-            }
-            document.addEventListener('DOMContentLoaded', loadPage)
-        </script>
+        <script src="/js/menu.js"></script>
+        <script src="/js/subscription-modal.js"></script>
     </body>
 </html>
