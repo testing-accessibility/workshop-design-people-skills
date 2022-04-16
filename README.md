@@ -21,6 +21,7 @@
 <!-- prettier-ignore-start -->
 [![GPL 3.0 License][license-badge]][license]
 [![Code of Conduct][coc-badge]][coc]
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/from-referrer/)
 <!-- prettier-ignore-end -->
 
 ## Prerequisites
