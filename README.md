@@ -30,7 +30,7 @@
 
 ## Options for working with this material
 
-- [Browser-based setup with GitPod](https://gitpod.io/#https://github.com/testing-accessibility/workshop-design-people-skills)
+- [Browser-based setup with GitPod](https://gitpod.io/from-referrer/)
   - GitPod provides a cloud-based development environment similar to VS Code  
   - Requires a login with Github
   - **Note**: GitPod may have accessibility issues
