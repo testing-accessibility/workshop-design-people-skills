@@ -30,8 +30,10 @@
 
 ## Options for working with this material
 
-- [Browser-based setup with GitPod](https://testingaccessib-workshop-abielzjxum9.ws-us39a.gitpod.io)
-  - Note: GitPod may have accessibility issues
+- [Browser-based setup with GitPod](https://gitpod.io/#https://github.com/testing-accessibility/workshop-design-people-skills)
+  - GitPod provides a cloud-based development environment similar to VS Code  
+  - Requires a login with Github
+  - **Note**: GitPod may have accessibility issues
 - [Download a zip file for local setup](https://github.com/testing-accessibility/workshop-design-people-skills/archive/refs/heads/main.zip)
 - Clone this Git repo for local setup (see instructions below)
 
