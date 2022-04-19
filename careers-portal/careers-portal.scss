@@ -7,6 +7,7 @@
     --color-stroke: #D1D5DB;
     --color-nav: var(--color-primary);
     --bgcolor-main: #F8FAFB;
+    --bgcolor-progressbar: #F3F4F6;
     --bgcolor-cell: var(--color-accent-light);
 }
 * {
@@ -291,6 +292,33 @@ a, a:link, .link {
 
     .subhead {
         font-size: 0.8rem;
+    }
+    .progress-bar {
+        background-color: var(--bgcolor-progressbar);
+        border-radius: 3px;
+        height: 4px;
+        overflow: hidden;
+        margin: 0.5em 0;
+        width: 100%;
+
+        &:before {
+            background-color: var(--color-accent);
+            content: '';
+            display: block;
+            height: 100%;
+        }
+        &.width-25:before {
+            width: 25%;
+        }
+        &.width-45:before {
+            width: 45%;
+        }
+        &.width-55:before {
+            width: 55%;
+        }
+        &.width-85:before {
+            width: 85%;
+        }
     }
 }
 .graph {
