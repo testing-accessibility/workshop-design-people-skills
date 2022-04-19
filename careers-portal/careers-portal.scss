@@ -1,0 +1,235 @@
+:root {
+    --bgcolor-main: #F8FAFB;
+    --bgcolor-cell: #fff;
+    --color-accent: #659CF7;
+    --color-primary: #374151;
+    --color-nav: --color-primary;
+    --color-large-number: #1F2937;
+    --color-muted: #9CA3AF;
+    --color-stroke: #D1D5DB;
+}
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+html, body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: var(--color-primary);
+    font-size: 16px;
+}
+a, a:link, .link {
+    color: var(--color-accent);
+    text-decoration: none;
+    font-weight: bold;
+}
+.link {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+
+    &:after {
+        background-image: url(images/open-arrow-blue.svg);
+        background-repeat: no-repeat;
+        content: '';
+        display: block;
+        height: 10px;
+        margin-left: 0.25em;
+        min-width: 6px;
+    }
+    &.white:after {
+        background-image: url(images/open-arrow-white.svg);
+    }
+}
+.header {
+    align-items: center;
+    display: flex;
+    height: 62px;
+    padding: 0 1em;
+
+    .logo {
+        background-image: url(images/platform-logo.svg);
+        background-repeat: no-repeat;
+        height: 26px;
+        margin: 0 0.5em;
+        width: 106px;
+    }
+    .nav-link {
+        align-items: center;
+        color: var(--color-nav);
+        cursor: pointer;
+        display: flex;
+        font-weight: bold;
+        height: 100%;
+        margin: 0 2em;
+        padding: 0.5em 0;
+
+        &:hover {
+            color: var(--color-accent);
+        }
+        &.active {
+            border-bottom: 3px solid var(--color-accent);
+            color: var(--color-accent);
+        }
+    }
+    .profile-menu {
+        margin-left: auto;
+
+        .button {
+            align-items: center;
+            color: var(--color-nav);
+            cursor: pointer;
+            display: flex;
+
+            img {
+                margin-right: 0.25em;
+            }
+            &:after {
+                background-image: url(images/open-arrow.svg);
+                background-repeat: no-repeat;
+                content: '';
+                display: block;
+                height: 6px;
+                margin-left: 0.25em;
+                min-width: 16px;
+            }
+            &.active:after {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+.main {
+    background-color: var(--bgcolor-main);
+    padding: 2em 1em;
+}
+.heading-3 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+.heading-4 {
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+.heading-5 {
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+.button {
+    cursor: pointer;
+    margin: 0 0.25em;
+
+    &.btn-settings {
+        background-image: url(images/icon-settings.svg);
+        background-size: contain;
+        height: 20px;
+        width: 20px;
+    }
+    &.btn-filters {
+        background-image: url(images/icon-filters.svg);
+        background-size: contain;
+        height: 20px;
+        width: 20px;
+    }
+}
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+
+    &.icon-performance {
+        background-image: url(images/icon-performance.svg);
+        background-size: contain;
+        height: 20px;
+        width: 20px;
+    }
+    &.icon-goals {
+        background-image: url(images/icon-goals.svg);
+        background-size: contain;
+        height: 20px;
+        width: 20px;
+    }
+    &.icon-feedback {
+        background-image: url(images/icon-feedback.svg);
+        background-size: contain;
+        height: 20px;
+        width: 20px;
+    }
+}
+.cols-3-primary {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.cell {
+    background-color: var(--bgcolor-cell);
+    border-radius: 5px;
+    margin-bottom: 1em;
+    padding: 1em;
+
+    &.no-padding {
+        padding: 0;
+    }
+}
+.cell-body.cols-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1em 0;
+    text-align: center;
+}
+.cell-header {
+    align-items: flex-start;
+    display: flex;
+
+    .heading-3 {
+        margin-right: auto;
+    }
+}
+.cell.no-padding {
+    padding-bottom: 1em;
+
+    .cell-header {
+        padding: 1em 1em 0;
+    }
+    .link-list {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+.cell-header.border-top {
+    border-top: 1px solid var(--color-stroke);
+    margin-top: 1.5em;
+    padding-top: 1.5em;
+}
+.large-number {
+    color: var(--color-large-number);
+    font-size: 4rem;
+}
+.subhead {
+    color: var(--color-muted);
+    font-size: 0.85rem;
+}
+.cell.team-goals .cell-body {
+    margin-top: 3em;
+}
+.goal-team-member {
+    display: flex;
+    gap: 0.5em;
+    margin: 1em 0;
+
+    .subhead {
+        font-size: 0.8rem;
+    }
+}
+.graph {
+    margin: 2em 1em 1em;
+}
+.link-list {
+    margin: 1.5em 0 2em 1.5em;
+
+    .list-item {
+        margin: 1.5em 0;
+    }
+}
