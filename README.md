@@ -33,7 +33,7 @@
 
 - [Browser-based setup with GitPod](https://gitpod.io/from-referrer/)
   - GitPod provides a cloud-based development environment similar to VS Code  
-  - Requires a login with Github
+  - Requires a login with GitHub
   - **Note**: GitPod may have accessibility issues
 - [Download a zip file for local setup](https://github.com/testing-accessibility/workshop-design-people-skills/archive/refs/heads/main.zip)
 - Clone this Git repo for local setup (see instructions below)
