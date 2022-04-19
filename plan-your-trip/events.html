@@ -5,17 +5,35 @@
         <link rel="stylesheet" type="text/css" href="../styles.scss" />
         <meta name="viewport" content="initial-scale=1" />
     </head>
-    <body>
+    <body class="header-overlap page-events">
         <include src="_includes/header.html"></include>
         <div id="main">
             <section aria-labelledby="heading-about-1">
                 <header class="page-header">
+                    <div class="header-video">
+                        <video autoplay muted loop>
+                            <source src="/images/camping-reel.mp4"
+            type="video/mp4">
+                            Sorry, your browser doesn't support this video.
+                        </video>
+                    </div>
                     <div class="page-header-content layout">
                         <h2 class="primary-heading h1-style" id="heading-about-1">Events</h2>
                     </div>
                 </header>
-                <article>
-                    
+                <article class="wide-layout two-parts-70-30">
+                    <div>
+                        <h2>Looking for fun stuff to do? Join a community event!</h2>
+                        <ul class="event-list">
+                            <li><a href="https://summermeltdown.com/">Summer Meltdown Festival 2022</a> - July 28-31, Sky Meadows Park - Darrington, WA</li>
+                            <li>YurtFest 2022 - August 5-7 - Deming, WA</li>
+                            <li>Lopez Island Bikepacking Adventure – Ongoing – Lopez Island, WA</li>
+                            <li>Mountain Loop Backpacking – September, dependent on conditions – Granite Falls, WA</li>
+                        </ul>
+                    </div>
+                    <div class="aside">
+                        <h3>Other stuff</h3>
+                    </div>
                 </article>
             </section>
         </div>
