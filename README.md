@@ -102,11 +102,11 @@ This should start the site for your browser at the address indicated in your Ter
 
 In this workshop, we’ll discuss topics that are necessary to solve accessibility problems with a focus on design thinking and culture.
 
-- exercise1-accessibility-as-ux
-- exercise2-designs-prototyping
-- exercise3-animation-motion
-- exercise4-finding-answers
-- exercise5-culture-of-accessibility
+- [exercise1-accessibility-as-ux](https://github.com/testing-accessibility/workshop-design-people-skills/blob/main/exercises/exercise1-biases.md)
+- [exercise2-designs-prototyping](https://github.com/testing-accessibility/workshop-design-people-skills/tree/main/exercises/exercise2-design-review)
+- [exercise3-reduced-motion](https://github.com/testing-accessibility/workshop-design-people-skills/tree/main/exercises/exercise3-reduced-motion)
+- [exercise4-finding-answers](https://github.com/testing-accessibility/workshop-design-people-skills/blob/main/exercises/exercise4-finding-answers.md)
+- [exercise5-culture-of-accessibility](https://github.com/testing-accessibility/workshop-design-people-skills/blob/main/exercises/exercise5-ticketing.md)
 
 This structure will allow you to iterate on working files with separate directories for the example sections.
 
