@@ -38,7 +38,6 @@
         display: flex;
     }
     svg {
-        animation: rotation 10s linear infinite;
         display: block;
         margin-left: auto;
         width: 150px;
@@ -68,6 +67,11 @@
         }
         to {
             transform: rotate(360deg);
+        }
+    }
+    @media (prefers-reduced-motion: no-preference) {
+        svg {
+            animation: rotation 10s linear infinite;
         }
     }
 }
