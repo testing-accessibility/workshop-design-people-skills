@@ -20,11 +20,19 @@
     margin: 1rem 0 0 0.5em;
     position: absolute;
 }
+.form-field div.btn-submit.btn-lookingglass {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    width: 2em;
+}
 .form-field span.icon-lookingglass {
     background: url(/images/icons/icon-lookingglass.svg) no-repeat;
 }
 .form-field span.icon-lookingglass-white {
     background: url(/images/icons/icon-lookingglass-white.svg) no-repeat;
+    background-size: contain;
 }
 .form-field button.btn-submit-icon span.icon-lookingglass-white {
     background-size: contain;
