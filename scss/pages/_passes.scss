@@ -295,7 +295,7 @@
                 }
             }
         }
-        button.btn-pay {
+        .btn-pay {
             background-color: var(--color-accent-cta);
             border: none;
             border-radius: 5px;
@@ -305,6 +305,7 @@
             font-weight: bold;
             padding: 1em;
             position: relative;
+            text-align: center;
             width: 100%;
             --webkit-appearance: none;
             
